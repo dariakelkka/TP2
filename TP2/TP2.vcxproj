@@ -143,6 +143,7 @@
     <ClCompile Include="Train.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Storage.h" />
     <ClInclude Include="Train.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
