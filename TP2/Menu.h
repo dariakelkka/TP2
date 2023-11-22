@@ -123,7 +123,6 @@ void MenuWorker() {
 		case 4:
 			system("cls");
 
-
 			store->displayKeep();
 
 			system("pause");
@@ -170,9 +169,7 @@ void Menu() {
 		case 2:
 			system("cls");
 
-
 			quote();
-			//MenuStream();
 
 			system("pause");
 			system("cls");
