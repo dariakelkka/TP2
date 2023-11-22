@@ -61,7 +61,7 @@ void MenuWorker() {
 			train = new Train;
 			train->setData();
 			store->addElement(train);
-			//store->sortirovka();
+			store->sortTimeDeparture();
 
 			system("pause");
 			system("cls");
@@ -132,7 +132,7 @@ void MenuWorker() {
 		case 5:
 			system("cls");
 
-			//store->displayByValue();
+			store->displayByNameDestination();
 
 			system("pause");
 			system("cls");

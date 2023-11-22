@@ -192,15 +192,6 @@ public:
                 (*this)[i].getData();
             }
 
-            /*   help = head;                                                        //display from Count to 1 //faster
-               int i = getCount();                                                 //because i use keeper as queue (head = #-count Element
-               while (help != nullptr && i != 0) {
-
-                   std::cout << "-------Element # " << i << "-------" << std::endl;
-                   (help->value)->getData();
-                   help = help->prev;
-                   i--;
-               }*/
             std::cout << "\nCount of Elements: " << getCount() << std::endl << std::endl;
         }
         catch (const std::exception& ex) {
