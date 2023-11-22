@@ -16,9 +16,7 @@ void MenuWorkerPrint() {
 	std::cout << "2 - Delete Element\n";
 	std::cout << "3 - Change Element\n";
 	std::cout << "4 - Display\n";
-	std::cout << "5 - Save to file\n";
-	std::cout << "6 - Extract from file\n";
-	std::cout << "7 - Display by value\n";
+	std::cout << "5 - Display by value\n";
 	std::cout << "0 - Exit\n";
 	std::cout << "Your choice: ";
 	while (!(std::cin >> action)) {
