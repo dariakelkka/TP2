@@ -10,7 +10,6 @@
 void quote() {
 	std::ifstream in;
 
-
     in.open("Text.txt");
 
     try {
@@ -30,8 +29,6 @@ void quote() {
                 while (!iss.eof()) {
                     iss >> ch;
                     if (ch == '\"') {
-
-                       // iss >> ch;
                         if (iss.eof()) {
 
                             flag = 0;
@@ -44,8 +41,6 @@ void quote() {
                 std::cout << str << '\n';
             iss.clear();
         }
-
-
         in.close();
     }
     catch (const std::exception& ex) {

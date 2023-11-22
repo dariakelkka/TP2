@@ -1,18 +1,18 @@
 #include "Train.h"
 
 Train::Train() {
-#ifdef DEBUG
-	std::cout << "Constructor Train\n"
-#endif // DEBUG
+
+	//std::cout << "Constructor Train\n"
+
 	nameDestination = "";
 	number = 0;
 	timeDeparture = 0;
 }
 
 Train::~Train() {
-#ifdef DEBUG
-	std::cout << "Destructor Train\n"
-#endif // DEBUG
+
+	//std::cout << "Destructor Train\n"
+
 }
 
 void Train::setData() {

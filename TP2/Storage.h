@@ -21,16 +21,16 @@ private:
         Element* prev;
 
         Element(Train* data, Element* prev = nullptr) {
-#ifdef DEBUG
-            std::cout << "Constructor Element\n";
-#endif // DEBUG	
+
+           // std::cout << "Constructor Element\n";
+
             this->value = data;
             this->prev = prev;
         }
         ~Element() {
-#ifdef DEBUG
-            std::cout << "Destructor Element\n";
-#endif // DEBUG	
+
+            //std::cout << "Destructor Element\n";
+
             delete this->value;
         }
     };
@@ -40,18 +40,19 @@ private:
 
 public:
     Storage() {
-#ifdef DEBUG
-        std::cout << "Constuctor Storage\n";
-#endif // DEBUG	
+
+        //std::cout << "Constuctor Storage\n";
+
         count = 0;
         head = nullptr;
         help = nullptr;
     }
 
+
     ~Storage() {
-#ifdef DEBUG
-        std::cout << "Destructor Storage\n";
-#endif // DEBUG	
+
+       // std::cout << "Destructor Storage\n";
+
         while (head != nullptr && count != 0) {
             help = head;
             head = head->prev;

@@ -143,7 +143,6 @@
     <ClCompile Include="Train.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Menu.h" />
     <ClInclude Include="Storage.h" />
     <ClInclude Include="Task2.h" />
     <ClInclude Include="Train.h" />
