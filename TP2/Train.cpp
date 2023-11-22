@@ -48,7 +48,7 @@ void Train::setData() {
 
 void Train::getData() {
 	std::cout << "Train\n";
-	std::cout << "nameDestination :\t" << nameDestination << '\n';
-	std::cout << "number \t:\t" << number << '\n';
-	std::cout << "timeDeparture :\t" << timeDeparture << '\n';
+	std::cout << "nameDestination: " << nameDestination << '\n';
+	std::cout << "number\t       : " << number << '\n';
+	std::cout << "timeDeparture  : " << timeDeparture << '\n';
 }

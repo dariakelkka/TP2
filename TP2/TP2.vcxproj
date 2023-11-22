@@ -145,7 +145,11 @@
   <ItemGroup>
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Storage.h" />
+    <ClInclude Include="Task2.h" />
     <ClInclude Include="Train.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

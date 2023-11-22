@@ -2,7 +2,7 @@
 
 #include "Train.h"
 #include "Storage.h"
-//#include "Stream.h"
+#include "Task2.h"
 
 int action;
 int actionGlobal;
@@ -149,11 +149,8 @@ void MenuWorker() {
 	}
 	delete store;
 }
-/*
-void MenuStream() {
-	Stream* stream = new Stream;
-	stream->withoutComma();
-}*/
+
+
 
 void Menu() {
 	actionGlobal = 1;
@@ -173,6 +170,8 @@ void Menu() {
 		case 2:
 			system("cls");
 
+
+			quote();
 			//MenuStream();
 
 			system("pause");
