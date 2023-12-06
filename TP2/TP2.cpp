@@ -10,7 +10,7 @@ int action;
 int actionGlobal;
 int val = 0;
 
-void MenuWorkerPrint();
+void MenuTrainPrint();
 void MenuPrint();
 void MenuTrain();
 
@@ -53,7 +53,7 @@ int main()
 
 
 
-void MenuWorkerPrint() {
+void MenuTrainPrint() {
 
 	std::cout << "//////Commands//////////////////////////\n";
 	std::cout << "//////1 - Add Element///////////////////\n";
@@ -83,7 +83,7 @@ void MenuTrain() {
 	action = 1;
 
 	while (action != 0) {
-		MenuWorkerPrint();
+		MenuTrainPrint();
 		switch (action) {
 		case 0:
 			break;
@@ -134,6 +134,8 @@ void MenuTrain() {
 				if (store->getCount() < val)  throw std::exception("This Element doesn't exist\n");
 				(*(store))[val].getData();
 				store->editElement(val);
+				//store->sortTimeDeparture();
+
 			}
 			catch (const std::exception& ex) {
 				std::cout << ex.what() << '\n';
@@ -144,6 +146,7 @@ void MenuTrain() {
 			break;
 		case 4:
 			system("cls");
+			store->sortTimeDeparture();
 
 			store->displayKeep();
 
