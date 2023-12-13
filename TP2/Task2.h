@@ -22,15 +22,21 @@ void quote() {
 
         while (!in.eof()) {
             flag = 1;
-            getline(in, str);
+            getline(in, str, '.');
             std::istringstream iss(str);
             iss >> ch;
+           /* std::string s;
+            while (ch != '\"' && !iss.eof()) {
+                iss >> ch;
+            }*/
             if (ch == '\"') {
+               // s += ch;
                 while (!iss.eof()) {
                     iss >> ch;
+                  //  s += ch;
                     if (ch == '\"') {
                         if (iss.eof()) {
-
+                        //s += ch;
                             flag = 0;
                             break;
                         }
